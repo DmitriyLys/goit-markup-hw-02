@@ -8,24 +8,30 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="body">
     <!-- Шапка -->
     <header>
       <!-- кнопки навигации  -->
       <nav class="nav-list">
         <a class="logo" href=""><span>Web</span>Studio</a>
         <ul class="list">
-          <li class="nav-list-item"><a href="./index.html">Студия</a></li>
-          <li class="nav-list-item"><a href="">Портфолио</a></li>
-          <li class="nav-list-item"><a href="">Контакты</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Портфолио</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
         </ul>
       </nav>
 
       <ul class="address">
-        <li>
-          <a lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="address-item">
+          <a class="address-link" lang="en" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li><a href="tel:+380961111111">+380961111111</a></li>
+        <li class="address-item">
+          <a class="address-link" href="tel:+380961111111">+380961111111</a>
+        </li>
       </ul>
     </header>
 
@@ -35,18 +41,27 @@
 
       <section class="list">
         <ul>
-          <li><button class="button-active" type="button">Все</button></li>
-          <li><button class="button" type="button">Веб-сайты</button></li>
-          <li><button class="button" type="button">Приложения</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+          <li class="list-item">
+            <button class="button-active" type="button">Все</button>
+          </li>
+          <li class="list-item">
+            <button class="button" type="button">Веб-сайты</button>
+          </li>
+          <li class="list-item">
+            <button class="button" type="button">Приложения</button>
+          </li>
+          <li class="list-item">
+            <button class="button" type="button">Дизайн</button>
+          </li>
+          <li class="list-item">
+            <button class="button" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
 
       <!-- примеры работ -->
       <section class="gallery">
         <ul class="gallery-list">
-            
           <li class="gallery-item">
             <img
               class="gallery-image"
@@ -149,14 +164,13 @@
             <h2 class="gallery-title" lang="en">Growing Business</h2>
             <p class="text">Приложение</p>
           </li>
-
         </ul>
       </section>
     </main>
 
     <!-- подвал -->
     <footer class="footer">
-      <a class="footer-logo" href=""><span>Web</span>Studio</a>
+      <a class="footer-logo-link" href=""><span>Web</span>Studio</a>
 
       <address class="footer-address">
         г. Киев, пр-т Леси Украинки, 26

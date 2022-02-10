@@ -1,16 +1,17 @@
 body {
 background-color: #E5E5E5;
-color: background: #212121;
-
-.item {
-    text-decoration: none;
+color: #212121;
 }
+.nav-list-link:hover, .nav-list-link:focus {
+    
+    color: #2196F3;
 
-.item {
-    text-decoration: none;
 }
-
-
-.galery-title {
-    background-color: aqua;
+/* для удаления маркера списка */
+li {
+    list-style-type: none;
 }
+/* для удаления подчеркивания ссылок */
+a { 
+    text-decoration: none; 
+   } 

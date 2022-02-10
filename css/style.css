@@ -1,13 +1,25 @@
+/* переменные */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --focus-button-color: #2196F3;
+
+
+
+}
+
+
 body {
 background-color: #E5E5E5;
 color: #212121;
 }
-.nav-list-link:hover, .nav-list-link:focus {
+.list-link:hover, .list-link:focus {
     
-    color: #2196F3;
+    color: var(--focus-button-color);
 
 }
-.nav-list-link visit {}
+
 /* для удаления маркера списка */
 li {
     list-style-type: none;
@@ -15,24 +27,71 @@ li {
 /* для удаления подчеркивания ссылок */
 a { 
     text-decoration: none; 
-    color: #212121;
+    color: var(--primary-text-color)
     ;
    } 
    .address-link{
-   color: #757575;
+   color: var(--secondary-text-color);
 }
 .address-link:hover,
 .address-link:focus {
-    color: #2196F3;
+    color: var(--primary-button-color);
 } 
 .footer-address-link {
     color: rgba(255, 255, 255, 0,6);
 }
 .footer-address-link:hover,
 .footer-address-link:focus {
-    color: #2196F3;
+    color: var(--focus-button-color);
 }
 /* web */
 .logo-link {
-    color: #2196F3;;
+    color: var(--focus-button-color);;
+}
+.list-link-index:visited {
+    color: var(--focus-button-color);
+}
+.list-link-portfolio:visited {
+    color: var(--focus-button-color);
+}
+
+.hero-title { color: #FFFFFF;
+}
+
+.hero-button {
+    background-color: rgba(33, 150, 243, 1);
+    ;
+    color: #FFFFFF
+    ;
+}
+.hero-button:hover, .hero-button:focus {
+        color: #FFFFFF;
+        background-color: #188CE8;
+}
+/* преимущества компании */
+.hidden-aside {
+    
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      
+}
+h2 {
+    color:var(--primary-text-color);
+}
+
+h3 {
+    color: var(--primary-text-color);
+
+}
+p {
+    color: var(--secondary-text-color);
 }

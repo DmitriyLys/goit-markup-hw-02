@@ -18,12 +18,6 @@ body {
   color: var(--focus-button-color);
 }
 
-/* курсор */
-
-cursor {
-  pointer-events: ;
-}
-
 /* для удаления маркера списка */
 li {
   list-style-type: none;

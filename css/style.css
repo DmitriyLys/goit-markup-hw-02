@@ -4,6 +4,7 @@
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --focus-button-color: #2196F3;
+    --button-text-color: #FFFFFF;
 
 
 
@@ -14,10 +15,11 @@ body {
 background-color: #E5E5E5;
 color: #212121;
 }
-.list-link:hover, .list-link:focus {
-    
+.list-link:hover, .list-link:focus {    
     color: var(--focus-button-color);
-
+}
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* для удаления маркера списка */
@@ -55,20 +57,20 @@ a {
     color: var(--focus-button-color);
 }
 
-.hero-title { color: #FFFFFF;
+.hero-title { color: var(--button-text-color);
 }
 
 .hero-button {
     background-color: rgba(33, 150, 243, 1);
     ;
-    color: #FFFFFF
+    color: var(--button-text-color)
     ;
 }
 .hero-button:hover, .hero-button:focus {
-        color: #FFFFFF;
+        color: var(--button-text-color);
         background-color: #188CE8;
 }
-/* преимущества компании */
+/* преимущества компании - скрытый заголовок */
 .hidden-aside {
     
         position: absolute;
@@ -84,6 +86,19 @@ a {
         overflow: hidden;
       
 }
+.main-content-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 h2 {
     color:var(--primary-text-color);
 }
@@ -95,3 +110,17 @@ h3 {
 p {
     color: var(--secondary-text-color);
 }
+
+.button-active {
+background-color: var(--focus-button-color);
+color: var(--button-text-color);
+}
+
+/* .galery-link:hover, .galery-link:focus {
+    background-color: var(--focus-button-color);
+color: var(--button-text-color);
+}
+ */
+
+
+

@@ -160,16 +160,17 @@ letter-spacing: 0.02em;
 /* Эффективное решение для вашего бизнеса */
 /* уникальная часть Hero */
 
-.Hero {
-  position:inherit
+.hero {
+  position: inherit;
   left: 0px;
   top: 80px;
   background-color: #2F303A;
   align-items: center;
   text-align: center;
-  }
+}
 
-  .Hero-text {
+
+  .hero-text {
     color: var(--button-text-color);
   }
    .hero-button {
@@ -197,13 +198,43 @@ letter-spacing: 0.02em;
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
-line-height: 60px;
-/* or 136% */
+line-height: 1.36;
 
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-color: #FFFFFF;
+color: var(--button-text-color)
   }
   
+  
+  /* преимущества Benefits компании */
+
+  .benefits-title {   
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+.benefits-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color)
+}
+
+/* Чем мы занимаемся */
+
+.main-content-caption {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+

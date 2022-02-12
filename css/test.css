@@ -2,7 +2,6 @@
 
 :root {
     --primary-text-color: #212121;
-    --backgroung-color-aside: #e5e5e5;
     --secondary-text-color: #757575;
     --focus-button-color: #2196f3;
     --button-text-color: #ffffff;
@@ -74,15 +73,6 @@
   
   
   
-  .aside-title {
-    font-size: 14px;
-    line-height: 1.14;
-  }
-  .aside-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-  }
   
   /* Чем мы занимаемся */
   .main-content-caption {
@@ -115,12 +105,7 @@
     text-transform: uppercase;
     font-weight: 900;
   }
-  .hero-text {
   
-  
-  }
-  
- 
 
   .main-content-hidden {
     position: absolute;

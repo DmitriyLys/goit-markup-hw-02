@@ -2,223 +2,208 @@
 
 :root {
   --primary-text-color: #212121;
+  --backgroung-color-benefits: #e5e5e5;
   --secondary-text-color: #757575;
   --focus-button-color: #2196f3;
   --button-text-color: #ffffff;
+  --comand-color:#F5F4FA;
+
 }
 
 body {
-  background-color: #e5e5e5;
   color: #212121;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color)
+
 }
-.list-link:hover,
-.list-link:focus {
-  color: var(--focus-button-color);
+/* ОФОРМЛЕНИЕ */
+
+
+/* background */
+.benefits, 
+.main {
+  background-color: var(--backgroung-color-aside)
+}
+.comand {
+  background-color: var(--comand-color);
 }
 
-/* для удаления маркера списка */
+.footer {
+  background-color: #2F303A;
+}
 li {
   list-style-type: none;
 }
 
-/* для удаления подчеркивания ссылок */
 a {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-h3 {
-  color: var(--primary-text-color);
-  font-weight: 400;
+
+
+/* скрытие заголовка Преимущества Benefits компании */
+.hidden-benefits {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-p {
-  color: var(--secondary-text-color);
-}
+/* лого в шапке */
 
-.address-link {
-  color: var(--secondary-text-color);
-}
-.address-link:hover,
-.address-link:focus {
-  color: var(--primary-button-color);
-}
-.footer-address-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-address-link:hover,
-.footer-address-link:focus {
-  color: var(--focus-button-color);
-}
-
-/* лого */
+/* web  */
 .logo-link {
   color: var(--focus-button-color);
+  font-size: 26px;
+
 }
+/* studio  */
+.logo-link-header{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  
+ /* цвет шрифта не понятно какой пока !!!!!!!!!!!!!!!!!! */
+}
+
+/* лого в фуктере */
+
 .logo,
 .footer-logo-link {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  
 }
 
-/* кнопки навигации */
+
+.logo-link-footer {
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.20;
+}
+
+
+
+.logo-link-footer {
+    color: var(--button-text-color);
+  }
+/* в шапке кнопки навигации*/
+
+
+.list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+font-style: normal;
+}
+
+
 
 .list-link-index:visited {
-  color: var(--focus-button-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+font-style: normal;
+color: var(--focus-button-color);
+
 }
+
+
 .list-link-portfolio:visited {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
   color: var(--focus-button-color);
-  font-weight: 500;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.list-link {
-  font-weight: 500;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
-.list-link {
-  font-weight: 500;
-}
+.list-link:hover,
+  .list-link:focus {
+    color: var(--focus-button-color);
+  }
 
+/* в шапке адресс */
+
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--focus-button-color)
+}
 .address-link {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+  color: var(--secondary-text-color);    
+  /* не понятно!!!!! */
 }
 
-/* преимущества компании */
+/* Эффективное решение для вашего бизнеса */
+/* уникальная часть Hero */
 
-.hidden-aside {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+.Hero {
+  position:inherit
+  left: 0px;
+  top: 80px;
+  background-color: #2F303A;
+  align-items: center;
+  text-align: center;
+  }
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.aside-title {
-  font-size: 14px;
-  line-height: 1.14;
-}
-.aside-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-/* Чем мы занимаемся */
-.main-content-caption {
-  color: var(--primary-text-color);
-  font-size: 36px;
-  line-height: 1.16;
-}
-/* наша команда */
-.main-content-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--primary-text-color);
-}
-.main-content-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--secondary-text-color);
-}
-
-.hero-title {
-  color: var(--button-text-color);
-}
-
-.hero-button {
-  background-color: rgba(33, 150, 243, 1);
-  color: var(--button-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
-.hero-button:hover,
-.hero-button:focus {
-  color: var(--button-text-color);
-  background-color: #188ce8;
-  cursor: pointer;
-}
-
-.main-content-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button-active {
-  background-color: var(--focus-button-color);
-  color: var(--button-text-color);
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  cursor: pointer;
-}
-/* .galery-link:hover, .galery-link:focus {
+  .Hero-text {
+    color: var(--button-text-color);
+  }
+   .hero-button {
     background-color: var(--focus-button-color);
-color: var(--button-text-color);
-}
- */
+    color: var(--button-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-style: normal;
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+  }
+  .hero-button:hover,
+  .hero-button:focus {
+    color: var(--button-text-color);
+    background-color: #188ce8;
+   
+  }
+  .Hero-text {
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
 
-.logo-link-white {
-  color: var(--button-text-color);
-}
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
 
-/* портфолио */
-
-.list-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.gallery-caption {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.gallety-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-}
+color: #FFFFFF;
+  }
+  

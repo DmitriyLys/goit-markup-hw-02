@@ -10,7 +10,6 @@
 }
 
 body {
-  color: #212121;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -61,7 +60,7 @@ a {
 }
 /* studio  */
 .logo-link-header {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -74,14 +73,14 @@ a {
 
 .logo,
 .footer-logo-link {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif; 
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
 }
 
 .logo-link-footer {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -174,7 +173,7 @@ a {
   color: var(--button-text-color);
   background-color: #188ce8;
 }
-.Hero-text {
+.hero-text {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -256,24 +255,93 @@ a {
 
 /* подвал */
 
+.footer-address {
+  position: bottom;
+  width: 231px;
+}
+
 .footer-address-link {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-color: var(--button-text-color);  
+  color: var(--button-text-color);
 }
-.footer-address-mail, 
+.footer-address-mail,
 .footer-address-tel {
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 }
-.footer-address-mail:hover, 
+.footer-address-mail:hover,
 .footer-address-tel:hover,
-.footer-address-mail:focus, 
+.footer-address-mail:focus,
 .footer-address-tel:focus {
   color: var(--focus-button-color);
+}
+
+/* Вторая часть ПОРТФОЛИО */
+
+/* скрытый заголовок */
+
+.main-content-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* кнопки фильтры */
+
+.button-active {
+  background: var(--focus-button-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--button-text-color);
+}
+.button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--focus-button-color);
+  color: var(--button-text-color);
+}
+
+/* галерея - примеры работ */
+
+.gallery-image {
+  width: 370px;
+  height: 294px;
+}
+.gallery-caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
 }

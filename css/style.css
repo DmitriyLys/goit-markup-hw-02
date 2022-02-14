@@ -109,7 +109,7 @@ a {
   color: var(--focus-button-color);
 }
 
-.list-link-portfolio:visited {
+.list-link-portfolio {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -317,7 +317,10 @@ a {
   line-height: 1.6;
   text-align: center;
   cursor: pointer;
+  background-color: var(--comand-color);
+
 }
+
 .button:hover,
 .button:focus {
   background-color: var(--focus-button-color);
@@ -345,3 +348,6 @@ a {
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
+
+
+
